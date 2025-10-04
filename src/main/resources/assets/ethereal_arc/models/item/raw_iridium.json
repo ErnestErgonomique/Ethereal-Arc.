@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "ernergbsanctuary:item/raw_iridium"
+		"layer0": "ethereal_arc:item/raw_iridium"
 	}
 }

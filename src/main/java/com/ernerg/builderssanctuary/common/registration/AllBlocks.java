@@ -2,7 +2,7 @@ package com.ernerg.builderssanctuary.common.registration;
 
 import java.util.function.Supplier;
 
-import com.ernerg.builderssanctuary.common.BuildersSanctuary;
+import com.ernerg.builderssanctuary.common.EtherealArc;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -13,7 +13,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class AllBlocks {
-	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(BuildersSanctuary.MOD_ID);
+	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtherealArc.MOD_ID);
 
 	public static final DeferredBlock<Block> IRIDIUM_ORE = registerBlock(
 		"iridium_ore",

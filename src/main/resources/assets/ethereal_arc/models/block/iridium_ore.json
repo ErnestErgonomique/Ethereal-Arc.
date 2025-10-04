@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/cube_all",
 	"textures": {
-		"all": "ernergbsanctuary:block/iridium_ore"
+		"all": "ethereal_arc:block/iridium_ore"
 	}
 }

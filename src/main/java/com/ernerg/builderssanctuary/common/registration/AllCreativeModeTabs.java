@@ -2,7 +2,7 @@ package com.ernerg.builderssanctuary.common.registration;
 
 import java.util.function.Supplier;
 
-import com.ernerg.builderssanctuary.common.BuildersSanctuary;
+import com.ernerg.builderssanctuary.common.EtherealArc;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -13,12 +13,12 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class AllCreativeModeTabs {
 	public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(
-		Registries.CREATIVE_MODE_TAB, BuildersSanctuary.MOD_ID
+		Registries.CREATIVE_MODE_TAB, EtherealArc.MOD_ID
 	);
 
 	public static final Supplier<CreativeModeTab> BSANCT = CREATIVE_MODE_TABS.register(
-		"bsanct", () -> CreativeModeTab.builder()
-		.title(Component.translatable("creativetabs." + BuildersSanctuary.MOD_ID + ".main"))
+		"ethereal_arc", () -> CreativeModeTab.builder()
+		.title(Component.translatable("creativetabs." + EtherealArc.MOD_ID + ".main"))
 		.icon(() -> new ItemStack(AllItems.ETHEREAL_CORE.get()))
 		.displayItems((itemDisplayParameters, output) -> {
 			output.accept(AllItems.ETHEREAL_CORE.get());

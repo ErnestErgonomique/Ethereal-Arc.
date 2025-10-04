@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "ernergbsanctuary:item/ethereal_core"
+		"layer0": "ethereal_arc:item/ethereal_core"
 	}
 }
