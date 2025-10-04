@@ -23,6 +23,7 @@ public class AllCreativeModeTabs {
 		.displayItems((itemDisplayParameters, output) -> {
 			output.accept(AllItems.ETHEREAL_CORE.get());
 			output.accept(AllBlocks.IRIDIUM_ORE);
+			output.accept(AllBlocks.DEEPSLATE_IRIDIUM_ORE);
 		}).build());
 
 	public static void register(IEventBus eventBus) {

@@ -18,7 +18,15 @@ public class AllBlocks {
 	public static final DeferredBlock<Block> IRIDIUM_ORE = registerBlock(
 		"iridium_ore",
 		() -> new Block(BlockBehaviour.Properties.of()
-			.strength(4f))
+			.strength(3f)
+			.requiresCorrectToolForDrops())
+	);
+
+	public static final DeferredBlock<Block> DEEPSLATE_IRIDIUM_ORE = registerBlock(
+		"deepslate_iridium_ore",
+		() -> new Block(BlockBehaviour.Properties.of()
+		.strength(4.5f)
+		.requiresCorrectToolForDrops())
 	);
 
 	private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
