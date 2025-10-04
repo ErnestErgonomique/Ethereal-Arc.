@@ -1,7 +1,10 @@
-package com.ernerg.builderssanctuary;
+package com.ernerg.builderssanctuary.common;
 
 import org.slf4j.Logger;
 
+import com.ernerg.builderssanctuary.common.registration.AllBlocks;
+import com.ernerg.builderssanctuary.common.registration.AllCreativeModeTabs;
+import com.ernerg.builderssanctuary.common.registration.AllItems;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -49,6 +52,10 @@ public class BuildersSanctuary {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        AllItems.register(modEventBus);
+        AllBlocks.register(modEventBus);
+        AllCreativeModeTabs.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -71,7 +78,7 @@ public class BuildersSanctuary {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

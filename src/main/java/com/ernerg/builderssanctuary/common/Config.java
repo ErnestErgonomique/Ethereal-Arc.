@@ -1,4 +1,4 @@
-package com.ernerg.builderssanctuary;
+package com.ernerg.builderssanctuary.common;
 
 import java.util.List;
 import java.util.Set;
