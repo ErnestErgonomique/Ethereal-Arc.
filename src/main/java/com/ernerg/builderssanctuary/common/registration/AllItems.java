@@ -17,6 +17,11 @@ public class AllItems {
 		new Item.Properties()
 	);
 
+	public static final Supplier<Item> RAW_IRIDIUM = ITEMS.registerSimpleItem(
+		"raw_iridium",
+		new Item.Properties()
+	);
+
 	// Method called in the main class constructor to register the list
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
