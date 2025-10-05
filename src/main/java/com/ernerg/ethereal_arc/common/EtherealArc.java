@@ -1,10 +1,10 @@
-package com.ernerg.builderssanctuary.common;
+package com.ernerg.ethereal_arc.common;
 
 import org.slf4j.Logger;
 
-import com.ernerg.builderssanctuary.common.registration.AllBlocks;
-import com.ernerg.builderssanctuary.common.registration.AllCreativeModeTabs;
-import com.ernerg.builderssanctuary.common.registration.AllItems;
+import com.ernerg.ethereal_arc.common.registration.AllBlocks;
+import com.ernerg.ethereal_arc.common.registration.AllCreativeModeTabs;
+import com.ernerg.ethereal_arc.common.registration.AllItems;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.core.registries.BuiltInRegistries;

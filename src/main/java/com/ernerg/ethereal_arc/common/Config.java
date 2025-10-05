@@ -1,4 +1,4 @@
-package com.ernerg.builderssanctuary.common;
+package com.ernerg.ethereal_arc.common;
 
 import java.util.List;
 import java.util.Set;

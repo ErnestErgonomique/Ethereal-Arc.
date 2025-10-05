@@ -1,0 +1,78 @@
+package com.ernerg.ethereal_arc.datagen;
+
+import java.util.concurrent.CompletableFuture;
+
+import com.ernerg.ethereal_arc.common.registration.AllBlocks;
+import com.ernerg.ethereal_arc.common.registration.AllItems;
+
+import net.minecraft.core.HolderLookup.Provider;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.RecipeCategory;
+import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.world.item.crafting.Ingredient;
+
+public class EtherealArcRecipeProvider extends RecipeProvider {
+
+	
+
+	public EtherealArcRecipeProvider(PackOutput output, CompletableFuture<Provider> registries) {
+		super(output, registries);
+	}
+
+	@Override
+	protected void buildRecipes(RecipeOutput output) {
+		
+		/*===== SMELTING =====*/
+		SimpleCookingRecipeBuilder.smelting(
+			Ingredient.of(AllItems.RAW_IRIDIUM.get()),
+			RecipeCategory.MISC,
+			AllItems.IRIDIUM_INGOT.get(),
+			2.0f, 200
+		).unlockedBy("has_raw_iridium", has(AllItems.RAW_IRIDIUM.get()))
+		.save(output, "iridium_ingot_from_smelting_raw_iridium");
+
+		SimpleCookingRecipeBuilder.smelting(
+			Ingredient.of(AllBlocks.IRIDIUM_ORE.get()),
+			RecipeCategory.MISC,
+			AllItems.IRIDIUM_INGOT.get(),
+			2.0f, 200
+		).unlockedBy("has_raw_iridium", has(AllBlocks.IRIDIUM_ORE.get()))
+		.save(output, "iridium_ingot_from_smelting_iridium_ore");
+
+		SimpleCookingRecipeBuilder.smelting(
+			Ingredient.of(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get()),
+			RecipeCategory.MISC,
+			AllItems.IRIDIUM_INGOT.get(),
+			2.0f, 200
+		).unlockedBy("has_raw_iridium", has(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get()))
+		.save(output, "iridium_ingot_from_smelting_deepslate_iridium_ore");
+
+		/*===== BLASTING =====*/
+		SimpleCookingRecipeBuilder.blasting(
+			Ingredient.of(AllItems.RAW_IRIDIUM.get()),
+			RecipeCategory.MISC,
+			AllItems.IRIDIUM_INGOT.get(),
+			2.0f, 100
+		).unlockedBy("has_raw_iridium", has(AllItems.RAW_IRIDIUM.get()))
+		.save(output, "iridium_ingot_from_blasting_raw_iridium");
+
+		SimpleCookingRecipeBuilder.blasting(
+			Ingredient.of(AllBlocks.IRIDIUM_ORE.get()),
+			RecipeCategory.MISC,
+			AllItems.IRIDIUM_INGOT.get(),
+			2.0f, 100
+		).unlockedBy("has_raw_iridium", has(AllBlocks.IRIDIUM_ORE.get()))
+		.save(output, "iridium_ingot_from_blasting_iridium_ore");
+
+		SimpleCookingRecipeBuilder.blasting(
+			Ingredient.of(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get()),
+			RecipeCategory.MISC,
+			AllItems.IRIDIUM_INGOT.get(),
+			2.0f, 100
+		).unlockedBy("has_raw_iridium", has(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get()))
+		.save(output, "iridium_ingot_from_blasting_deepslate_iridium_ore");
+	}
+	
+}

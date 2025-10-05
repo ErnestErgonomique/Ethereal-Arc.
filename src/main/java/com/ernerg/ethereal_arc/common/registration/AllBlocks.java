@@ -1,8 +1,8 @@
-package com.ernerg.builderssanctuary.common.registration;
+package com.ernerg.ethereal_arc.common.registration;
 
 import java.util.function.Supplier;
 
-import com.ernerg.builderssanctuary.common.EtherealArc;
+import com.ernerg.ethereal_arc.common.EtherealArc;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

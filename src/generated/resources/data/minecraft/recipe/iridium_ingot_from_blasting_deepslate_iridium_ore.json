@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 2.0,
+  "ingredient": {
+    "item": "ethereal_arc:deepslate_iridium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "ethereal_arc:iridium_ingot"
+  }
+}
