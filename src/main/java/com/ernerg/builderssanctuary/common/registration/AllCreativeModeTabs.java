@@ -16,7 +16,7 @@ public class AllCreativeModeTabs {
 		Registries.CREATIVE_MODE_TAB, EtherealArc.MOD_ID
 	);
 
-	public static final Supplier<CreativeModeTab> BSANCT = CREATIVE_MODE_TABS.register(
+	public static final Supplier<CreativeModeTab> ETHEREAL_ARC = CREATIVE_MODE_TABS.register(
 		"ethereal_arc", () -> CreativeModeTab.builder()
 		.title(Component.translatable("creativetabs." + EtherealArc.MOD_ID + ".main"))
 		.icon(() -> new ItemStack(AllItems.ETHEREAL_CORE.get()))
@@ -25,6 +25,7 @@ public class AllCreativeModeTabs {
 			output.accept(AllBlocks.IRIDIUM_ORE);
 			output.accept(AllBlocks.DEEPSLATE_IRIDIUM_ORE);
 			output.accept(AllItems.RAW_IRIDIUM.get());
+			output.accept(AllItems.IRIDIUM_INGOT.get());
 		}).build());
 
 	public static void register(IEventBus eventBus) {
