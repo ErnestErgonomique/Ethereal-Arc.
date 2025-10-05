@@ -16,6 +16,7 @@ public class AllItems {
 	public static final Supplier<Item> ETHEREAL_CORE = ITEMS.registerSimpleItem(
 		"ethereal_core",
 		new Item.Properties()
+		.rarity(Rarity.RARE)
 	);
 
 	public static final Supplier<Item> RAW_IRIDIUM = ITEMS.registerSimpleItem(
