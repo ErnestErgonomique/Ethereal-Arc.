@@ -6,10 +6,10 @@
       "request": "launch",
       "name": "Client",
       "presentation": {
-        "group": "Mod Development - minecraftmod",
+        "group": "Mod Development - ethereal_arc",
         "order": 0
       },
-      "projectName": "minecraftmod",
+      "projectName": "ethereal_arc",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
         "@D:\\Programmation\\Java\\projects\\minecraftmod\\build\\moddev\\clientRunProgramArgs.txt"
@@ -28,10 +28,10 @@
       "request": "launch",
       "name": "Data",
       "presentation": {
-        "group": "Mod Development - minecraftmod",
+        "group": "Mod Development - ethereal_arc",
         "order": 1
       },
-      "projectName": "minecraftmod",
+      "projectName": "ethereal_arc",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
         "@D:\\Programmation\\Java\\projects\\minecraftmod\\build\\moddev\\dataRunProgramArgs.txt"
@@ -50,10 +50,10 @@
       "request": "launch",
       "name": "GameTestServer",
       "presentation": {
-        "group": "Mod Development - minecraftmod",
+        "group": "Mod Development - ethereal_arc",
         "order": 2
       },
-      "projectName": "minecraftmod",
+      "projectName": "ethereal_arc",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
         "@D:\\Programmation\\Java\\projects\\minecraftmod\\build\\moddev\\gameTestServerRunProgramArgs.txt"
@@ -72,10 +72,10 @@
       "request": "launch",
       "name": "Server",
       "presentation": {
-        "group": "Mod Development - minecraftmod",
+        "group": "Mod Development - ethereal_arc",
         "order": 3
       },
-      "projectName": "minecraftmod",
+      "projectName": "ethereal_arc",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
         "@D:\\Programmation\\Java\\projects\\minecraftmod\\build\\moddev\\serverRunProgramArgs.txt"
