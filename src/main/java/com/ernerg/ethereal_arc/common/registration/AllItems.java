@@ -10,7 +10,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class AllItems {
-	// Item list given to the game at the right time
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EtherealArc.MOD_ID);
 
 	public static final Supplier<Item> ETHEREAL_CORE = ITEMS.registerSimpleItem(
@@ -30,7 +29,6 @@ public class AllItems {
 		.rarity(Rarity.UNCOMMON)
 	);
 
-	// Method called in the main class constructor to register the list
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}
