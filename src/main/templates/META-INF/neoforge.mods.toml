@@ -6,7 +6,7 @@ license = "MIT"
 [[mods]]
 modId = "ethereal_arc"
 version = "0.0.0"
-displayName = "Ethereal Arc"
+displayName = "Ethereal Arc."
 authors = "Ernerg"
 description = '''
 A survival-friendly builder-oriented expansion mod
