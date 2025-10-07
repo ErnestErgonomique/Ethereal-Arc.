@@ -26,7 +26,6 @@ public class AllItems {
 	public static final Supplier<Item> IRIDIUM_INGOT = ITEMS.registerSimpleItem(
 		"iridium_ingot",
 		new Item.Properties()
-		.rarity(Rarity.UNCOMMON)
 	);
 
 	public static void register(IEventBus eventBus) {
