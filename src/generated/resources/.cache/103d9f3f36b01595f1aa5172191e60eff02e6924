@@ -1,0 +1,4 @@
+// 1.21.1	2025-10-07T15:32:14.9322674	Registries
+837cdab2d9acd1c2a96806ce3043c6e805a256be data/ethereal_arc/neoforge/biome_modifier/add_iridium_ore.json
+5e8f08853ae7964b631be9531bb226d9d5eb1383 data/ethereal_arc/worldgen/configured_feature/iridium_ore.json
+7f4947bc02567a3bfbf39498595ef7e590994267 data/ethereal_arc/worldgen/placed_feature/iridium_ore_placed.json

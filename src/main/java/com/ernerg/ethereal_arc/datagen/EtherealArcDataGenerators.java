@@ -45,5 +45,7 @@ public class EtherealArcDataGenerators {
 		generator.addProvider(event.includeClient(), new EtherealArcBlockStateProvider(packOutput, existingFileHelper));
 		
 		generator.addProvider(event.includeServer(), new EtherealArcRecipeProvider(packOutput, lookupProvider));
+
+		generator.addProvider(event.includeServer(), new EtherealArcDatapackProvider(packOutput, lookupProvider));
 	}
 }
