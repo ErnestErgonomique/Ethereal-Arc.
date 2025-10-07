@@ -7,6 +7,7 @@ import com.ernerg.ethereal_arc.common.EtherealArc;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -26,6 +27,7 @@ public class AllBlocks {
 		"deepslate_iridium_ore",
 		() -> new Block(BlockBehaviour.Properties.of()
 			.strength(4.5f)
+			.sound(SoundType.DEEPSLATE)
 			.requiresCorrectToolForDrops())
 	);
 
