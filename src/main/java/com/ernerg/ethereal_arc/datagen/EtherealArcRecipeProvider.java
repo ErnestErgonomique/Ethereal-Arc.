@@ -10,8 +10,11 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
 
 public class EtherealArcRecipeProvider extends RecipeProvider {
 
@@ -23,6 +26,19 @@ public class EtherealArcRecipeProvider extends RecipeProvider {
 
 	@Override
 	protected void buildRecipes(RecipeOutput output) {
+		/*===== CRAFTING =====*/
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.IRIDIUM_BLOCK.get())
+				.define('#', AllItems.IRIDIUM_INGOT.get())
+				.pattern("###")
+				.pattern("###")
+				.pattern("###")
+				.unlockedBy("has_iridium_ingot", has(AllItems.IRIDIUM_INGOT.get()))
+				.save(output);
+
+			ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AllItems.IRIDIUM_INGOT.get(), 9)
+				.requires(AllBlocks.IRIDIUM_BLOCK.get())
+				.unlockedBy("has_iridium_block", has(AllBlocks.IRIDIUM_BLOCK.get()))
+				.save(output);
 		
 		/*===== SMELTING =====*/
 		SimpleCookingRecipeBuilder.smelting(

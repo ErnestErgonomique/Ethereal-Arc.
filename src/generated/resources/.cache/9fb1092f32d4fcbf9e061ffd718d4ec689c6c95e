@@ -1,4 +1,8 @@
-// 1.21.1	2025-10-05T18:46:37.6679698	Recipes
+// 1.21.1	2025-10-07T20:53:30.4033995	Recipes
+f477fe289efcef7e893b3f5626abd1f3dd79fcb5 data/ethereal_arc/advancement/recipes/misc/iridium_block.json
+fa40a0b61af190604d120db0a3f34ab1381fa28e data/ethereal_arc/advancement/recipes/misc/iridium_ingot.json
+87ed48b5cb600d8f27e8b40424ec6a767dcb791c data/ethereal_arc/recipe/iridium_block.json
+5a5866309f7f492ef91e4bf9456d29aad439f139 data/ethereal_arc/recipe/iridium_ingot.json
 4be845d5899bac5bbd8bac60a7446eb1f73793f9 data/minecraft/advancement/recipes/misc/iridium_ingot_from_blasting_deepslate_iridium_ore.json
 f13cf39fc558b5621f9e9680c6dc9fad3c3a0a3d data/minecraft/advancement/recipes/misc/iridium_ingot_from_blasting_iridium_ore.json
 cf63f20d81a82d7e50b83f5ef1e44c7f50a18ba1 data/minecraft/advancement/recipes/misc/iridium_ingot_from_blasting_raw_iridium.json

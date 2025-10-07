@@ -1,3 +1,4 @@
-// 1.21.1	2025-10-06T18:14:26.9029153	Loot Tables
+// 1.21.1	2025-10-07T20:36:25.5338377	Loot Tables
 923b8e27970338003f3d78bbbb4073d575000f9f data/ethereal_arc/loot_table/blocks/deepslate_iridium_ore.json
+52da7b3616cc4c2846944d73522f0bf2495c5f77 data/ethereal_arc/loot_table/blocks/iridium_block.json
 895f1da6d372182ef0751b9c95ac08f5d2a52be5 data/ethereal_arc/loot_table/blocks/iridium_ore.json

@@ -26,6 +26,7 @@ public class EtherealArcBlockLootTableProvider extends BlockLootSubProvider {
 		add(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get(),
 			block -> createOreDrop(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get(), AllItems.RAW_IRIDIUM.get())
 		);
+		dropSelf(AllBlocks.IRIDIUM_BLOCK.get());
 	}
 
 	@Override

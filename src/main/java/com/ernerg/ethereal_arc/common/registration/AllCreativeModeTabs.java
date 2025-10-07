@@ -26,6 +26,7 @@ public class AllCreativeModeTabs {
 			output.accept(AllBlocks.DEEPSLATE_IRIDIUM_ORE);
 			output.accept(AllItems.RAW_IRIDIUM.get());
 			output.accept(AllItems.IRIDIUM_INGOT.get());
+			output.accept(AllBlocks.IRIDIUM_BLOCK.get());
 		}).build());
 
 	public static void register(IEventBus eventBus) {
