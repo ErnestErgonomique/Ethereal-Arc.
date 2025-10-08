@@ -52,6 +52,19 @@ public class EtherealArcRecipeProvider extends RecipeProvider {
 			.unlockedBy("has_iridium_ingot", has(AllItems.IRIDIUM_INGOT.get()))
 			.save(output, "iridium_nugget");
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.RAW_IRIDIUM_BLOCK.get())
+			.define('#', AllItems.RAW_IRIDIUM.get())
+			.pattern("###")
+			.pattern("###")
+			.pattern("###")
+			.unlockedBy("has_raw_iridium", has(AllItems.RAW_IRIDIUM.get()))
+			.save(output, "raw_iridium_block");
+		
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AllItems.RAW_IRIDIUM.get(), 9)
+			.requires(AllBlocks.RAW_IRIDIUM_BLOCK.get())
+			.unlockedBy("has_raw_iridium_block", has(AllBlocks.RAW_IRIDIUM_BLOCK.get()))
+			.save(output, "raw_iridium");
+
 		
 		/*===== SMELTING =====*/
 		SimpleCookingRecipeBuilder.smelting(

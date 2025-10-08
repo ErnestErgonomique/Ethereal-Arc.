@@ -1,10 +1,13 @@
-// 1.21.1	2025-10-07T20:36:25.5328381	Block States: ethereal_arc
+// 1.21.1	2025-10-08T16:30:36.9733639	Block States: ethereal_arc
 b14e427ab31fee4734a6c778b80ba794dd4453b8 assets/ethereal_arc/blockstates/deepslate_iridium_ore.json
 77a1a8c4112edcf353c7429dbfdfe17a52b10651 assets/ethereal_arc/blockstates/iridium_block.json
 c9e75f86ee6dbc27d0d2433dc56873a947cbb202 assets/ethereal_arc/blockstates/iridium_ore.json
+8f635cfefc4d4484ae088312775415719e901e1d assets/ethereal_arc/blockstates/raw_iridium_block.json
 463209c4b827a67a80b9bd84b3ec1853031c3eb2 assets/ethereal_arc/models/block/deepslate_iridium_ore.json
 239e74e6683ba30db064b5e476d3fd8de837af23 assets/ethereal_arc/models/block/iridium_block.json
 6625b3538bff37a47ab8792a106aa3f1be3a5353 assets/ethereal_arc/models/block/iridium_ore.json
+c697c895276daa19627c5344fe433e3e36f09677 assets/ethereal_arc/models/block/raw_iridium_block.json
 8e38f0069be4874da4c800486e5f691ee2363fcb assets/ethereal_arc/models/item/deepslate_iridium_ore.json
 9c1c133094dc0e427f946371a3399b712065e50c assets/ethereal_arc/models/item/iridium_block.json
 bd28e2e621eb4d456a55493c78b69e8b0c679841 assets/ethereal_arc/models/item/iridium_ore.json
+8ab9b32ca83f1433ba7c1ced98fd1983cbeadb04 assets/ethereal_arc/models/item/raw_iridium_block.json

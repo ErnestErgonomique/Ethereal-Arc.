@@ -1,3 +1,3 @@
-// 1.21.1	2025-10-07T20:36:25.5308361	Tags for minecraft:block mod id ethereal_arc
-7650a6970189c8598f578c176d0a3e80c79bc810 data/minecraft/tags/block/mineable/pickaxe.json
-7650a6970189c8598f578c176d0a3e80c79bc810 data/minecraft/tags/block/needs_iron_tool.json
+// 1.21.1	2025-10-08T16:30:36.9713635	Tags for minecraft:block mod id ethereal_arc
+c969b319dc4eb1eaf6963ef4dc8108eb8c223cc4 data/minecraft/tags/block/mineable/pickaxe.json
+c969b319dc4eb1eaf6963ef4dc8108eb8c223cc4 data/minecraft/tags/block/needs_iron_tool.json

@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-08T15:44:01.2624537	Recipes
+// 1.21.1	2025-10-08T16:30:36.975366	Recipes
 cffa71c2f9206c4d9c5b9cd184b19d4bb915a760 data/minecraft/advancement/recipes/misc/iridium_block.json
 4be845d5899bac5bbd8bac60a7446eb1f73793f9 data/minecraft/advancement/recipes/misc/iridium_ingot_from_blasting_deepslate_iridium_ore.json
 f13cf39fc558b5621f9e9680c6dc9fad3c3a0a3d data/minecraft/advancement/recipes/misc/iridium_ingot_from_blasting_iridium_ore.json
@@ -9,6 +9,8 @@ b44f1cb3aa22b0492c05e9e0771010f0b1645c5f data/minecraft/advancement/recipes/misc
 f379af99df657d64b75ad007d519cf7e275e40a8 data/minecraft/advancement/recipes/misc/iridium_ingot_from_smelting_iridium_ore.json
 1e67371cd445e35b407cc9a70d26a55453c1c6d1 data/minecraft/advancement/recipes/misc/iridium_ingot_from_smelting_raw_iridium.json
 c4b7703eee6860d595acc8d6add80e6505a9813d data/minecraft/advancement/recipes/misc/iridium_nugget.json
+249789c8bedf77aca02e6fe8beb910e8f86d19e9 data/minecraft/advancement/recipes/misc/raw_iridium.json
+5c801af84e225518e0dadae39ebd6f661dccf95f data/minecraft/advancement/recipes/misc/raw_iridium_block.json
 87ed48b5cb600d8f27e8b40424ec6a767dcb791c data/minecraft/recipe/iridium_block.json
 6d7a44e75827a22c491fee53bda2c613e7e5b30f data/minecraft/recipe/iridium_ingot_from_blasting_deepslate_iridium_ore.json
 d7dc1dfef62ca7a804dabafcbf346b21b624767b data/minecraft/recipe/iridium_ingot_from_blasting_iridium_ore.json
@@ -19,3 +21,5 @@ b8758b62bbb1413a1e4975d043ebf0dc5855efc6 data/minecraft/recipe/iridium_ingot_fro
 5db1375140a87c0c941a4039028197e822349643 data/minecraft/recipe/iridium_ingot_from_smelting_iridium_ore.json
 48f080b8b26d5cebdeea5ef25ba5dcd09fb3bf9e data/minecraft/recipe/iridium_ingot_from_smelting_raw_iridium.json
 ffc4370c2e35b923d995ff755c0a77c008c6c60b data/minecraft/recipe/iridium_nugget.json
+742657855bfc5ea47d0513ecc933b8d14ed277d6 data/minecraft/recipe/raw_iridium.json
+af321d02a37536f172b591ef35cd8379e0fd4ea8 data/minecraft/recipe/raw_iridium_block.json

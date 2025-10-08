@@ -28,6 +28,7 @@ public class AllCreativeModeTabs {
 			output.accept(AllItems.IRIDIUM_INGOT.get());
 			output.accept(AllBlocks.IRIDIUM_BLOCK.get());
 			output.accept(AllItems.IRIDIUM_NUGGET.get());
+			output.accept(AllBlocks.RAW_IRIDIUM_BLOCK.get());
 		}).build());
 
 	public static void register(IEventBus eventBus) {

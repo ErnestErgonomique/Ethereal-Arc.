@@ -35,8 +35,14 @@ public class AllBlocks {
 		"iridium_block",
 		() -> new Block(BlockBehaviour.Properties.of()
 			.strength(3.0f)
-			.requiresCorrectToolForDrops()
-		)
+			.requiresCorrectToolForDrops())
+	);
+
+	public static final DeferredBlock<Block> RAW_IRIDIUM_BLOCK = registerBlock(
+		"raw_iridium_block",
+		() -> new Block(BlockBehaviour.Properties.of()
+			.strength(3.0f)
+			.requiresCorrectToolForDrops())
 	);
 
 	private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

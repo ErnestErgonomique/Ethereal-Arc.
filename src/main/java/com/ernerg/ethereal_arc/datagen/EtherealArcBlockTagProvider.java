@@ -26,12 +26,14 @@ public class EtherealArcBlockTagProvider extends BlockTagsProvider {
 		tag(BlockTags.MINEABLE_WITH_PICKAXE)
 			.add(AllBlocks.IRIDIUM_ORE.get())
 			.add(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get())
-			.add(AllBlocks.IRIDIUM_BLOCK.get());
+			.add(AllBlocks.IRIDIUM_BLOCK.get())
+			.add(AllBlocks.RAW_IRIDIUM_BLOCK.get());
 
 		tag(BlockTags.NEEDS_IRON_TOOL)
 			.add(AllBlocks.IRIDIUM_ORE.get())
 			.add(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get())
-			.add(AllBlocks.IRIDIUM_BLOCK.get());
+			.add(AllBlocks.IRIDIUM_BLOCK.get())
+			.add(AllBlocks.RAW_IRIDIUM_BLOCK.get());
 	}
 	
 }
