@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_iridium_block": {
+    "has_iridium_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "ethereal_arc:iridium_block"
+            "items": "ethereal_arc:iridium_ingot"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "ethereal_arc:iridium_ingot"
+        "recipe": "minecraft:iridium_nugget"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_iridium_block"
+      "has_iridium_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "ethereal_arc:iridium_ingot"
+      "minecraft:iridium_nugget"
     ]
   }
 }

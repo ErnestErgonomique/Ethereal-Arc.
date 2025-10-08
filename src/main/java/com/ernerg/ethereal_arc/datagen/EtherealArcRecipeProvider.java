@@ -14,7 +14,6 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
 
 public class EtherealArcRecipeProvider extends RecipeProvider {
 
@@ -28,17 +27,31 @@ public class EtherealArcRecipeProvider extends RecipeProvider {
 	protected void buildRecipes(RecipeOutput output) {
 		/*===== CRAFTING =====*/
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.IRIDIUM_BLOCK.get())
-				.define('#', AllItems.IRIDIUM_INGOT.get())
-				.pattern("###")
-				.pattern("###")
-				.pattern("###")
-				.unlockedBy("has_iridium_ingot", has(AllItems.IRIDIUM_INGOT.get()))
-				.save(output);
+			.define('#', AllItems.IRIDIUM_INGOT.get())
+			.pattern("###")
+			.pattern("###")
+			.pattern("###")
+			.unlockedBy("has_iridium_ingot", has(AllItems.IRIDIUM_INGOT.get()))
+			.save(output, "iridium_block");
 
-			ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AllItems.IRIDIUM_INGOT.get(), 9)
-				.requires(AllBlocks.IRIDIUM_BLOCK.get())
-				.unlockedBy("has_iridium_block", has(AllBlocks.IRIDIUM_BLOCK.get()))
-				.save(output);
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AllItems.IRIDIUM_INGOT.get(), 9)
+			.requires(AllBlocks.IRIDIUM_BLOCK.get())
+			.unlockedBy("has_iridium_block", has(AllBlocks.IRIDIUM_BLOCK.get()))
+			.save(output, "iridium_ingot_from_block");
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllItems.IRIDIUM_INGOT.get())
+			.define('#', AllItems.IRIDIUM_NUGGET.get())
+			.pattern("###")
+			.pattern("###")
+			.pattern("###")
+			.unlockedBy("has_iridium_nugget", has(AllItems.IRIDIUM_NUGGET.get()))
+			.save(output, "iridium_ingot_from_nuggets");
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AllItems.IRIDIUM_NUGGET.get(), 9)
+			.requires(AllItems.IRIDIUM_INGOT.get())
+			.unlockedBy("has_iridium_ingot", has(AllItems.IRIDIUM_INGOT.get()))
+			.save(output, "iridium_nugget");
+
 		
 		/*===== SMELTING =====*/
 		SimpleCookingRecipeBuilder.smelting(

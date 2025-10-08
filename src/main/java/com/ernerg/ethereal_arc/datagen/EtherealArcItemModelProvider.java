@@ -18,6 +18,7 @@ public class EtherealArcItemModelProvider extends ItemModelProvider {
 		basicItem(AllItems.ETHEREAL_CORE.get());
 		basicItem(AllItems.RAW_IRIDIUM.get());
 		basicItem(AllItems.IRIDIUM_INGOT.get());
+		basicItem(AllItems.IRIDIUM_NUGGET.get());
 	}
 	
 }

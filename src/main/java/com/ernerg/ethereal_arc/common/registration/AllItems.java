@@ -28,6 +28,11 @@ public class AllItems {
 		new Item.Properties()
 	);
 
+	public static final Supplier<Item> IRIDIUM_NUGGET = ITEMS.registerSimpleItem(
+		"iridium_nugget",
+		new Item.Properties()
+	);
+
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

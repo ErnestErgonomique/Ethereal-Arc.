@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "ethereal_arc:iridium_block"
+        "recipe": "minecraft:iridium_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "ethereal_arc:iridium_block"
+      "minecraft:iridium_block"
     ]
   }
 }
