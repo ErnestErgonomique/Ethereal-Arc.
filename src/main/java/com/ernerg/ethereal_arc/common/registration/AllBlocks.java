@@ -3,6 +3,7 @@ package com.ernerg.ethereal_arc.common.registration;
 import java.util.function.Supplier;
 
 import com.ernerg.ethereal_arc.common.EtherealArc;
+import com.ernerg.ethereal_arc.common.block.HostilityAnnihilatorBlock;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -48,8 +49,8 @@ public class AllBlocks {
 
 	public static final DeferredBlock<Block> HOSTILITY_ANNIHILATOR = registerBlock(
 		"hostility_annihilator",
-		() -> new Block(BlockBehaviour.Properties.of()
-			.noOcclusion())
+		() -> new HostilityAnnihilatorBlock(BlockBehaviour.Properties.of()
+			.noLootTable())
 
 	);
 

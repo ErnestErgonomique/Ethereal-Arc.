@@ -20,6 +20,8 @@ public class EtherealArcBlockStateProvider extends BlockStateProvider {
 		blockWithItem(AllBlocks.DEEPSLATE_IRIDIUM_ORE);
 		blockWithItem(AllBlocks.IRIDIUM_BLOCK);
 		blockWithItem(AllBlocks.RAW_IRIDIUM_BLOCK);
+		
+		blockWithItem(AllBlocks.HOSTILITY_ANNIHILATOR);
 	}
 
 	private void blockWithItem(DeferredBlock<?> deferredBlock) {
