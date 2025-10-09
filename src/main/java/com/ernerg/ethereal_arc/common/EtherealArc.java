@@ -2,6 +2,7 @@ package com.ernerg.ethereal_arc.common;
 
 import org.slf4j.Logger;
 
+import com.ernerg.ethereal_arc.common.registration.AllBlockEntities;
 import com.ernerg.ethereal_arc.common.registration.AllBlocks;
 import com.ernerg.ethereal_arc.common.registration.AllCreativeModeTabs;
 import com.ernerg.ethereal_arc.common.registration.AllItems;
@@ -52,8 +53,10 @@ public class EtherealArc {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        // Registration
         AllItems.register(modEventBus);
         AllBlocks.register(modEventBus);
+        AllBlockEntities.register(modEventBus);
         AllCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab

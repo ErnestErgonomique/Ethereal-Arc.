@@ -14,6 +14,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class AllBlocks {
+	
 	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EtherealArc.MOD_ID);
 
 	public static final DeferredBlock<Block> IRIDIUM_ORE = registerBlock(
@@ -43,6 +44,13 @@ public class AllBlocks {
 		() -> new Block(BlockBehaviour.Properties.of()
 			.strength(3.0f)
 			.requiresCorrectToolForDrops())
+	);
+
+	public static final DeferredBlock<Block> HOSTILITY_ANNIHILATOR = registerBlock(
+		"hostility_annihilator",
+		() -> new Block(BlockBehaviour.Properties.of()
+			.noOcclusion())
+
 	);
 
 	private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

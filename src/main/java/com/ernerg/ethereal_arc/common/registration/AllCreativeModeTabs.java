@@ -12,6 +12,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class AllCreativeModeTabs {
+	
 	public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(
 		Registries.CREATIVE_MODE_TAB, EtherealArc.MOD_ID
 	);

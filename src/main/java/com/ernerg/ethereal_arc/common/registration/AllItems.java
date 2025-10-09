@@ -10,6 +10,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class AllItems {
+	
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EtherealArc.MOD_ID);
 
 	public static final Supplier<Item> ETHEREAL_CORE = ITEMS.registerSimpleItem(
