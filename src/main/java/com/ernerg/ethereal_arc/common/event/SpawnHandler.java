@@ -1,7 +1,7 @@
 package com.ernerg.ethereal_arc.common.event;
 
 import com.ernerg.ethereal_arc.common.EtherealArc;
-import com.ernerg.ethereal_arc.common.system.HostilityAnnihilatorManager;
+import com.ernerg.ethereal_arc.common.blockentity.HostilityAnnihilatorBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -26,7 +26,7 @@ public class SpawnHandler {
 
 		BlockPos pos = entity.blockPosition();
 
-		if (HostilityAnnihilatorManager.isInSpawnZone(pos)) {
+		if (HostilityAnnihilatorBlockEntity.isInSpawnZone(pos)) {
 			event.setResult(Result.FAIL);
 
 			if (!level.isClientSide) {

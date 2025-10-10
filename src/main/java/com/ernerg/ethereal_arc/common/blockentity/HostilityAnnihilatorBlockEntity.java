@@ -1,13 +1,20 @@
-package com.ernerg.ethereal_arc.common.system;
+package com.ernerg.ethereal_arc.common.blockentity;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import net.minecraft.core.BlockPos;
+import com.ernerg.ethereal_arc.common.registration.AllBlockEntities;
 
-public class HostilityAnnihilatorManager {
-	
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+
+public class HostilityAnnihilatorBlockEntity extends BlockEntity {
 	private static final Set<BlockPos> ACTIVE_BLOCKS = new HashSet<>();
+
+	public HostilityAnnihilatorBlockEntity(BlockPos pos, BlockState blockState) {
+		super(AllBlockEntities.HOSTILITY_ANNIHILATOR_BLOCK_ENTITY.get(), pos, blockState);
+	}
 
 	public static void addBlock(BlockPos pos) {
 		ACTIVE_BLOCKS.add(pos);
