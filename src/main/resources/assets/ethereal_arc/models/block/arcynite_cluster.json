@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/amethyst_cluster",
+  "textures": {
+    "cross": "ethereal_arc:block/arcynite_cluster"
+  },
+  "render_type": "cutout"
+}

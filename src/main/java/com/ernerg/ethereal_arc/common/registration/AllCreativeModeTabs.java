@@ -23,13 +23,19 @@ public class AllCreativeModeTabs {
 		.icon(() -> new ItemStack(AllItems.ETHEREAL_CORE.get()))
 		.displayItems((itemDisplayParameters, output) -> {
 			output.accept(AllItems.ETHEREAL_CORE.get());
-			output.accept(AllBlocks.IRIDIUM_ORE);
-			output.accept(AllBlocks.DEEPSLATE_IRIDIUM_ORE);
+			output.accept(AllBlocks.IRIDIUM_ORE.get());
+			output.accept(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get());
 			output.accept(AllItems.RAW_IRIDIUM.get());
 			output.accept(AllItems.IRIDIUM_INGOT.get());
 			output.accept(AllBlocks.IRIDIUM_BLOCK.get());
 			output.accept(AllItems.IRIDIUM_NUGGET.get());
 			output.accept(AllBlocks.RAW_IRIDIUM_BLOCK.get());
+			output.accept(AllBlocks.ARCYNITE_BLOCK.get());
+			output.accept(AllBlocks.BUDDING_ARCYNITE.get());
+			output.accept(AllBlocks.ARCYNITE_CLUSTER.get());
+			output.accept(AllBlocks.LARGE_ARCYNITE_BUD.get());
+			output.accept(AllBlocks.MEDIUM_ARCYNITE_BUD.get());
+			output.accept(AllBlocks.SMALL_ARCYNITE_BUD.get());
 		}).build());
 
 	public static void register(IEventBus eventBus) {

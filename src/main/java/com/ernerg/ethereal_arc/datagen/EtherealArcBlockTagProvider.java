@@ -27,7 +27,12 @@ public class EtherealArcBlockTagProvider extends BlockTagsProvider {
 			.add(AllBlocks.IRIDIUM_ORE.get())
 			.add(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get())
 			.add(AllBlocks.IRIDIUM_BLOCK.get())
-			.add(AllBlocks.RAW_IRIDIUM_BLOCK.get());
+			.add(AllBlocks.RAW_IRIDIUM_BLOCK.get())
+			.add(AllBlocks.ARCYNITE_BLOCK.get())
+			.add(AllBlocks.ARCYNITE_CLUSTER.get())
+			.add(AllBlocks.LARGE_ARCYNITE_BUD.get())
+			.add(AllBlocks.MEDIUM_ARCYNITE_BUD.get())
+			.add(AllBlocks.SMALL_ARCYNITE_BUD.get());
 
 		tag(BlockTags.NEEDS_IRON_TOOL)
 			.add(AllBlocks.IRIDIUM_ORE.get())

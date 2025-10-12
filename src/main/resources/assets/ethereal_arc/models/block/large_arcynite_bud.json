@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/large_amethyst_bud",
+  "textures": {
+    "cross": "ethereal_arc:block/large_arcynite_bud"
+  },
+  "render_type": "cutout"
+}

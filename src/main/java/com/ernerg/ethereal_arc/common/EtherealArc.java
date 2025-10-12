@@ -1,6 +1,5 @@
 package com.ernerg.ethereal_arc.common;
 
-import org.apache.http.conn.scheme.HostNameResolver;
 import org.slf4j.Logger;
 
 import com.ernerg.ethereal_arc.common.menu.HostilityAnnihilatorScreen;
