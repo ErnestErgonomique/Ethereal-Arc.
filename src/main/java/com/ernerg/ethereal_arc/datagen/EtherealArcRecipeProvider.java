@@ -65,6 +65,12 @@ public class EtherealArcRecipeProvider extends RecipeProvider {
 			.unlockedBy("has_raw_iridium_block", has(AllBlocks.RAW_IRIDIUM_BLOCK.get()))
 			.save(output, "raw_iridium");
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.ARCYNITE_BLOCK.get())
+			.define('#', AllItems.ARCYNITE_SHARD.get())
+			.pattern("##")
+			.pattern("##")
+			.unlockedBy("has_arcynite_shard", has(AllItems.ARCYNITE_SHARD.get()))
+			.save(output, "arcynite_block");
 		
 		/*===== SMELTING =====*/
 		SimpleCookingRecipeBuilder.smelting(

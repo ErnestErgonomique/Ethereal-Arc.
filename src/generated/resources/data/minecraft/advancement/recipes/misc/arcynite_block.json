@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_arcynite_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ethereal_arc:arcynite_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:arcynite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_arcynite_shard"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:arcynite_block"
+    ]
+  }
+}
