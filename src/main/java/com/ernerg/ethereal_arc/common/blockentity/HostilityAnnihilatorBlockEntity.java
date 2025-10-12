@@ -3,13 +3,19 @@ package com.ernerg.ethereal_arc.common.blockentity;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.ernerg.ethereal_arc.common.menu.HostilityAnnihilatorMenu;
 import com.ernerg.ethereal_arc.common.registration.AllBlockEntities;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class HostilityAnnihilatorBlockEntity extends BlockEntity {
+public class HostilityAnnihilatorBlockEntity extends BlockEntity implements MenuProvider {
 	private static final Set<BlockPos> ACTIVE_BLOCKS = new HashSet<>();
 
 	public HostilityAnnihilatorBlockEntity(BlockPos pos, BlockState blockState) {
@@ -34,5 +40,15 @@ public class HostilityAnnihilatorBlockEntity extends BlockEntity {
 			}
 		}
 		return false;
+	}
+
+	@Override
+	public AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player) {
+		return new HostilityAnnihilatorMenu(containerId, playerInventory, this);
+	}
+
+	@Override
+	public Component getDisplayName() {
+		return Component.literal("Hostility Annihilator");
 	}
 }
