@@ -1,6 +1,6 @@
-// 1.21.1	2025-10-12T16:43:35.8274861	Loot Tables
+// 1.21.1	2025-10-12T19:48:03.5798207	Loot Tables
 53da336df79b0e736d1883894922acbcf7fc23d4 data/ethereal_arc/loot_table/blocks/arcynite_block.json
-3afb61674467da731d57a0ad996372cda201321a data/ethereal_arc/loot_table/blocks/arcynite_cluster.json
+2f48989bf2f068cb81d81a9909f70310466c4f3f data/ethereal_arc/loot_table/blocks/arcynite_cluster.json
 463c04a4bda9224b129a9507b65a1742ecfbd348 data/ethereal_arc/loot_table/blocks/budding_arcynite.json
 923b8e27970338003f3d78bbbb4073d575000f9f data/ethereal_arc/loot_table/blocks/deepslate_iridium_ore.json
 52da7b3616cc4c2846944d73522f0bf2495c5f77 data/ethereal_arc/loot_table/blocks/iridium_block.json

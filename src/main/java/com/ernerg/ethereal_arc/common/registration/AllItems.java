@@ -34,6 +34,11 @@ public class AllItems {
 		new Item.Properties()
 	);
 
+	public static final Supplier<Item> ARCYNITE_SHARD = ITEMS.registerSimpleItem(
+		"arcynite_shard",
+		new Item.Properties()
+	);
+
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

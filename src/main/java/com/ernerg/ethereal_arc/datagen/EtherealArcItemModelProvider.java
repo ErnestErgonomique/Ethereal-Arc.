@@ -31,6 +31,7 @@ public class EtherealArcItemModelProvider extends ItemModelProvider {
 		basicItemFromBlock(AllBlocks.LARGE_ARCYNITE_BUD.get());
 		basicItemFromBlock(AllBlocks.MEDIUM_ARCYNITE_BUD.get());
 		basicItemFromBlock(AllBlocks.SMALL_ARCYNITE_BUD.get());
+		basicItem(AllItems.ARCYNITE_SHARD.get());
 	}
 
 	public ItemModelBuilder basicItemFromBlock(Block block) {

@@ -36,6 +36,7 @@ public class AllCreativeModeTabs {
 			output.accept(AllBlocks.LARGE_ARCYNITE_BUD.get());
 			output.accept(AllBlocks.MEDIUM_ARCYNITE_BUD.get());
 			output.accept(AllBlocks.SMALL_ARCYNITE_BUD.get());
+			output.accept(AllItems.ARCYNITE_SHARD.get());
 		}).build());
 
 	public static void register(IEventBus eventBus) {

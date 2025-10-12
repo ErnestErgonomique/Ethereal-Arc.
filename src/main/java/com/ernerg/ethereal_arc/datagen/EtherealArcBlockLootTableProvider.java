@@ -45,13 +45,13 @@ public class EtherealArcBlockLootTableProvider extends BlockLootSubProvider {
 		add(AllBlocks.BUDDING_ARCYNITE.get(), noDrop());
 		add(AllBlocks.ARCYNITE_CLUSTER.get(),
 			block -> createSilkTouchDispatchTable(
-				block, LootItem.lootTableItem(AllItems.ETHEREAL_CORE.get())
+				block, LootItem.lootTableItem(AllItems.ARCYNITE_SHARD.get())
 					.apply(SetItemCountFunction.setCount(ConstantValue.exactly(4.0f)))
 					.apply(ApplyBonusCount.addOreBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))
 					.when(MatchTool.toolMatches(ItemPredicate.Builder.item().of(ItemTags.CLUSTER_MAX_HARVESTABLES)))
 					.otherwise(
 						(LootPoolEntryContainer.Builder<?>)this.applyExplosionDecay(
-                             block, LootItem.lootTableItem(AllItems.ETHEREAL_CORE.get())
+                             block, LootItem.lootTableItem(AllItems.ARCYNITE_SHARD.get())
 							 	.apply(SetItemCountFunction.setCount(ConstantValue.exactly(2.0F)))
                         )
 					)
