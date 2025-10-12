@@ -17,6 +17,8 @@ public class EtherealArcBiomeModifier {
 
 	public static final ResourceKey<BiomeModifier> ADD_IRIDIUM_ORE = registerKey("add_iridium_ore");
 
+	public static final ResourceKey<BiomeModifier> ADD_ARCYNITE_GEODE = registerKey("add_arcynite_geode");
+
 	public static void bootstrap(BootstrapContext<BiomeModifier> context) {
 		var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
 		var biomes = context.lookup(Registries.BIOME);
@@ -25,6 +27,12 @@ public class EtherealArcBiomeModifier {
 			biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
 			HolderSet.direct(placedFeatures.getOrThrow(EtherealArcPlacedFeatures.IRIDIUM_ORE_PLACED_KEY)),
 			GenerationStep.Decoration.UNDERGROUND_ORES
+		));
+
+		context.register(ADD_ARCYNITE_GEODE, new BiomeModifiers.AddFeaturesBiomeModifier(
+			biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+			HolderSet.direct(placedFeatures.getOrThrow(EtherealArcPlacedFeatures.ARCYNITE_GEODE_PLACED_KEY)),
+			GenerationStep.Decoration.UNDERGROUND_DECORATION
 		));
 	}
 	

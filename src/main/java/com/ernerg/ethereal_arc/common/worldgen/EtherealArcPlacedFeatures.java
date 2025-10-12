@@ -12,23 +12,39 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
+import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.RarityFilter;
 
 public class EtherealArcPlacedFeatures {
 
 	public static final ResourceKey<PlacedFeature> IRIDIUM_ORE_PLACED_KEY = registerKey("iridium_ore_placed");
+
+	public static final ResourceKey<PlacedFeature> ARCYNITE_GEODE_PLACED_KEY = registerKey("arcynite_geode_placed");
 
 	public static void bootstrap(BootstrapContext<PlacedFeature> context) {
 		var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
 		register(context, IRIDIUM_ORE_PLACED_KEY,
 			configuredFeatures.getOrThrow(EtherealArcConfiguredFeatures.OVERWORLD_IRIDIUM_ORE_KEY),
-			EtherealArcOrePlacement.commonOrePlacement(7,
+			EtherealArcOrePlacement.commonOrePlacement(3,
 				HeightRangePlacement.triangle(
-					VerticalAnchor.aboveBottom(48),
-					VerticalAnchor.aboveBottom(-48)
+					VerticalAnchor.aboveBottom(-48),
+					VerticalAnchor.aboveBottom(48)
 				))
+		);
+
+		register(context, ARCYNITE_GEODE_PLACED_KEY,
+			configuredFeatures.getOrThrow(EtherealArcConfiguredFeatures.ARCYNITE_GEODE_KEY),
+			List.of(
+				RarityFilter.onAverageOnceEvery(52),
+				InSquarePlacement.spread(),
+				HeightRangePlacement.uniform(
+					VerticalAnchor.aboveBottom(6), 
+					VerticalAnchor.aboveBottom(96)
+				)
+			)
 		);
 	}
 	
