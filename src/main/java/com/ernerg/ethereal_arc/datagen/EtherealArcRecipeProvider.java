@@ -17,8 +17,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 public class EtherealArcRecipeProvider extends RecipeProvider {
 
-	
-
 	public EtherealArcRecipeProvider(PackOutput output, CompletableFuture<Provider> registries) {
 		super(output, registries);
 	}
@@ -122,5 +120,4 @@ public class EtherealArcRecipeProvider extends RecipeProvider {
 		).unlockedBy("has_raw_iridium", has(AllBlocks.DEEPSLATE_IRIDIUM_ORE.get()))
 		.save(output, "iridium_ingot_from_blasting_deepslate_iridium_ore");
 	}
-	
 }

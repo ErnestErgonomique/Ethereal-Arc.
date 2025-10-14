@@ -1,8 +1,9 @@
-// 1.21.1	2025-10-12T18:35:36.5679554	Block States: ethereal_arc
+// 1.21.1	2025-10-14T23:59:27.7207862	Block States: ethereal_arc
 86490c84c5c2708a770d5ab349145cddf94a326f assets/ethereal_arc/blockstates/arcynite_block.json
 c8f4c37a2cc9972fc24267d9cdd93697887217e8 assets/ethereal_arc/blockstates/arcynite_cluster.json
 c4fd0faf2b0981e0c22c6c2a26cf829643fc2ac2 assets/ethereal_arc/blockstates/budding_arcynite.json
 b14e427ab31fee4734a6c778b80ba794dd4453b8 assets/ethereal_arc/blockstates/deepslate_iridium_ore.json
+81e77d80d2254c1c7a4ffab42dbbde6a697ad14e assets/ethereal_arc/blockstates/etheric_catalyst.json
 f0382094b736d3d23be4aae779599de59b0ba959 assets/ethereal_arc/blockstates/hostility_annihilator.json
 77a1a8c4112edcf353c7429dbfdfe17a52b10651 assets/ethereal_arc/blockstates/iridium_block.json
 c9e75f86ee6dbc27d0d2433dc56873a947cbb202 assets/ethereal_arc/blockstates/iridium_ore.json

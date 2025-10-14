@@ -60,6 +60,7 @@ public class EtherealArcBlockLootTableProvider extends BlockLootSubProvider {
 		dropWhenSilkTouch(AllBlocks.LARGE_ARCYNITE_BUD.get());
 		dropWhenSilkTouch(AllBlocks.MEDIUM_ARCYNITE_BUD.get());
 		dropWhenSilkTouch(AllBlocks.SMALL_ARCYNITE_BUD.get());
+		dropSelf(AllBlocks.ETHERIC_CATALYST.get());
 	}
 
 	@Override

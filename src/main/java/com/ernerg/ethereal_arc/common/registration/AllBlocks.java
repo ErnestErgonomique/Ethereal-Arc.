@@ -90,6 +90,13 @@ public class AllBlocks {
 		() -> new AmethystClusterBlock(3, 4, BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD))
 	);
 
+	public static final DeferredBlock<Block> ETHERIC_CATALYST = registerBlock(
+		"etheric_catalyst",
+		() -> new Block(BlockBehaviour.Properties.of()
+			.strength(3)
+			.requiresCorrectToolForDrops())
+	);
+
 	private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
 		DeferredBlock<T> toReturn = BLOCKS.register(name, block);
 		registerBlockItem(name, toReturn);

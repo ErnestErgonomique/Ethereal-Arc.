@@ -33,6 +33,11 @@ public class EtherealArcBlockStateProvider extends BlockStateProvider {
 		crystalLike(AllBlocks.SMALL_ARCYNITE_BUD, "small_arcynite_bud");
 		
 		blockWithItem(AllBlocks.HOSTILITY_ANNIHILATOR);
+
+		simpleBlock(
+			AllBlocks.ETHERIC_CATALYST.get(),
+			models().getExistingFile(modLoc("block/etheric_catalyst"))
+		); 
 	}
 
 	private void blockWithItem(DeferredBlock<?> deferredBlock) {

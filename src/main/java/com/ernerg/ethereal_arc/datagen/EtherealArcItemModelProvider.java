@@ -32,6 +32,7 @@ public class EtherealArcItemModelProvider extends ItemModelProvider {
 		basicItemFromBlock(AllBlocks.MEDIUM_ARCYNITE_BUD.get());
 		basicItemFromBlock(AllBlocks.SMALL_ARCYNITE_BUD.get());
 		basicItem(AllItems.ARCYNITE_SHARD.get());
+		withExistingParent(AllBlocks.ETHERIC_CATALYST.getId().getPath(), modLoc("block/etheric_catalyst"));
 	}
 
 	public ItemModelBuilder basicItemFromBlock(Block block) {
