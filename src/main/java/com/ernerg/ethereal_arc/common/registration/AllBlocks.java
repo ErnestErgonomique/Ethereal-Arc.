@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 
 import com.ernerg.ethereal_arc.common.EtherealArc;
 import com.ernerg.ethereal_arc.common.block.BuddingArcyniteBlock;
+import com.ernerg.ethereal_arc.common.block.EthericCatalystBlock;
 import com.ernerg.ethereal_arc.common.block.HostilityAnnihilatorBlock;
 
 import net.minecraft.world.item.BlockItem;
@@ -92,7 +93,7 @@ public class AllBlocks {
 
 	public static final DeferredBlock<Block> ETHERIC_CATALYST = registerBlock(
 		"etheric_catalyst",
-		() -> new Block(BlockBehaviour.Properties.of()
+		() -> new EthericCatalystBlock(BlockBehaviour.Properties.of()
 			.strength(3)
 			.requiresCorrectToolForDrops())
 	);

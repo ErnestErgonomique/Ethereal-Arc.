@@ -1,6 +1,7 @@
 package com.ernerg.ethereal_arc.common.registration;
 
 import com.ernerg.ethereal_arc.common.EtherealArc;
+import com.ernerg.ethereal_arc.common.menu.EthericCatalystMenu;
 import com.ernerg.ethereal_arc.common.menu.HostilityAnnihilatorMenu;
 
 import net.minecraft.core.registries.Registries;
@@ -20,6 +21,9 @@ public class AllMenuTypes {
 
 	public static final DeferredHolder<MenuType<?>, MenuType<HostilityAnnihilatorMenu>> HOSTILITY_ANNIHILATOR_MENU =
 		registerMenuType("hostility_annihilator_menu", HostilityAnnihilatorMenu::new);
+
+	public static final DeferredHolder<MenuType<?>, MenuType<EthericCatalystMenu>> ETHERIC_CATALYST_MENU =
+		registerMenuType("etheric_catalyst_menu", EthericCatalystMenu::new);
 
 	private static <T extends AbstractContainerMenu> DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(
 		String name, IContainerFactory<T> factory

@@ -10,13 +10,13 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class HostilityAnnihilatorScreen extends AbstractContainerScreen<HostilityAnnihilatorMenu>{
+public class EthericCatalysScreen extends AbstractContainerScreen<EthericCatalystMenu> {
 
 	private static final ResourceLocation GUI_TEXTURE = ResourceLocation.fromNamespaceAndPath(
-		EtherealArc.MOD_ID, "textures/gui/hostility_annihilator/hostility_annihilator.png"
+		EtherealArc.MOD_ID, "textures/gui/etheric_catalyst/etheric_catalyst.png"
 	);
 
-	public HostilityAnnihilatorScreen(HostilityAnnihilatorMenu menu, Inventory playerInventory, Component title) {
+	public EthericCatalysScreen(EthericCatalystMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
 	}
 

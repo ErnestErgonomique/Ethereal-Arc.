@@ -3,6 +3,7 @@ package com.ernerg.ethereal_arc.common.registration;
 import java.util.function.Supplier;
 
 import com.ernerg.ethereal_arc.common.EtherealArc;
+import com.ernerg.ethereal_arc.common.blockentity.EthericCatalystBlockEntity;
 import com.ernerg.ethereal_arc.common.blockentity.HostilityAnnihilatorBlockEntity;
 
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -24,6 +25,15 @@ public class AllBlockEntities {
 				AllBlocks.HOSTILITY_ANNIHILATOR.get()
 			).build(null)
 		);
+
+		public static final Supplier<BlockEntityType<EthericCatalystBlockEntity>> ETHERIC_CATALYST_BLOCK_ENTITY =
+			BLOCK_ENTITIES.register(
+				"etheric_catalyst_block_entity",
+				() -> BlockEntityType.Builder.of(
+					EthericCatalystBlockEntity::new,
+					AllBlocks.ETHERIC_CATALYST.get()
+				).build(null)
+			);
 
 	public static void register(IEventBus eventBus) {
 		BLOCK_ENTITIES.register(eventBus);

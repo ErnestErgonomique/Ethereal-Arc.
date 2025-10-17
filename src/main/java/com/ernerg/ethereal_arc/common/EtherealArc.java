@@ -2,6 +2,7 @@ package com.ernerg.ethereal_arc.common;
 
 import org.slf4j.Logger;
 
+import com.ernerg.ethereal_arc.common.menu.EthericCatalysScreen;
 import com.ernerg.ethereal_arc.common.menu.HostilityAnnihilatorScreen;
 import com.ernerg.ethereal_arc.common.registration.AllBlockEntities;
 import com.ernerg.ethereal_arc.common.registration.AllBlocks;
@@ -87,6 +88,7 @@ public class EtherealArc {
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(AllMenuTypes.HOSTILITY_ANNIHILATOR_MENU.get(), HostilityAnnihilatorScreen::new);
+            event.register(AllMenuTypes.ETHERIC_CATALYST_MENU.get(), EthericCatalysScreen::new);
         }
     }
 }
